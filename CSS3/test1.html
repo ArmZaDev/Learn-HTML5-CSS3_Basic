@@ -8,15 +8,28 @@
 
     <style>
         p{
-            font-size: 24pt;
+            font-size: 60%;
+        }
+        body{
+            font-size: 10px;
         }      
-        .meassge{
-            font-size: 4pc;
+        div{
+            font-size: 2em;
         }
     </style>
 </head>
 <body>
-    <p>CSS3</p>
-    <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ab!</p>
+    <div>
+        test1             <!--(10 x 2 = 20px)-->
+        <div>
+            test2         <!--(20 x 2 = 40px)-->
+            <div>
+                test3     <!--(40 x 2 = 80px)-->
+                <div>
+                    test4 <!--(80 x 2 = 160px)-->
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
