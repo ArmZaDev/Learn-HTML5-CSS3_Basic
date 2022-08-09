@@ -4,32 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Unit Example</title>
+    <title>CSS3</title>
 
     <style>
-        p{
+        #title{
+            color: red;
+        }
+        .message{
             font-size: 60%;
         }
-        body{
-            font-size: 10px;
-        }      
-        div{
-            font-size: 2em;
+        h1{
+            color: blue;
+        }
+        *{
+            background-color: aqua;
+            font-size: 20px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <div>
-        test1             <!--(10 x 2 = 20px)-->
-        <div>
-            test2         <!--(20 x 2 = 40px)-->
-            <div>
-                test3     <!--(40 x 2 = 80px)-->
-                <div>
-                    test4 <!--(80 x 2 = 160px)-->
-                </div>
-            </div>
-        </div>
+    <h1>Naruto</h1>
+    <p class="message">Lorem ipsum dolor sit amet.</p>
+    <hr>
+    <p id="title">Lorem ipsum dolor sit amet 
+        consectetur adipisicing elit.</p>
+    <hr>
+    <div style="border: 1px solid black;" width="500px" height="500">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, 
+        delectus. ipsum dolor sit amet consectetur.
     </div>
 </body>
 </html>
