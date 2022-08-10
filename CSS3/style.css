@@ -1,26 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&family=Sriracha&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-
-.message{
-    font-family: 'Itim', cursive;
-    font-size: x-large;
-    font-weight: 300;
-    font-style: italic;
-    color: orange;
-}
-#title{
-    font-family: 'Sriracha', cursive;
-    font-size: medium;
-    font-weight: bold;
-    color: hotpink;
-}
 div{
-    color: rgba(21, 122, 231, 0.764);
-    text-align: justify;
+    width: 100px;
+    height: 100px;
 }
-h1{
-    font-family: 'Noto Sans JP', sans-serif;
-    color: #000000;
-    text-decoration: underline;
-    text-align: center;
+.box-1{
+    background-color: orange;
+    border: solid 5px black;
 }
+.box-2{
+    background-color: pink;
+    border: dotted 5px black;
+}
+.box-3{
+    background-color: blanchedalmond;
+    border: dashed 5px black;
+}
+.box-4{
+    background-color: cornsilk;
+    border: solid;
+    border-radius: 10px;
+}
+
