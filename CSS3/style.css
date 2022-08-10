@@ -1,6 +1,13 @@
-p#message{
-    color:blue;
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Sriracha&display=swap');
+
+.message{
+    font-family: 'Itim', cursive;
+    font-size: x-large;
+    font-weight: 300;
+    font-style: italic;
 }
-h1.title{
-    color:orange;
+#title{
+    font-family: 'Sriracha', cursive;
+    font-size: medium;
+    font-weight: bold;
 }
