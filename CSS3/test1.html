@@ -7,54 +7,59 @@
     <title>CSS3</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        li{
-            display: inline;
+        body{
+            height: 4000px;
         }
-        li a{
-            padding-right: 20px;
-        }
-
-        a:link{
-            text-decoration: none;
-        }       
         .box{
-            width: 30%;
-            box-sizing: border-box;
-            display: inline-block;
-            padding: 10px;
-            background-color: antiquewhites;
+            width: 100px;
+            height: 100px;
+        }
+        #box-1{
+            background-color: orange;
+            position: relative;
+            left: 50px;
+            top: 50px;
+            z-index: 1;
+        }
+        #box-2{
+            background-color: greenyellow;
+            position: absolute;
+            top: 100px;
+            left: 50px;
+        }
+        #box-3{
+            background-color: purple;
+            position: absolute;
+            top: 200px;
+            right: 50px;
+        }
+        #box-4{
+            background-color: pink;
+            position: fixed;
+        }
+        #box-5{
+            background-color: red;
+            position: sticky;
+            top: 0;
+        }
+        .container{
+            position: relative;
+            width: 500px;
+            height: 300px;
+            background-color: #333;
         }
     </style>
 </head>
 <body>
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Page</a></li>
-        <li><a href="#">Contact</a></li>
-        <hr>
-        <div class="box">
-            <h1>Title 1</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, 
-                saepe vitae fugit at laborum in aliquid commodi numquam veniam harum nam quibusdam, 
-                voluptatibus corporis, nesciunt reprehenderit voluptate dicta ipsam sint!
-            </p>
-        </div>
-        <div class="box">
-            <h1>Title 2</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, 
-                saepe vitae fugit at laborum in aliquid commodi numquam veniam harum nam quibusdam, 
-                voluptatibus corporis, nesciunt reprehenderit voluptate dicta ipsam sint!
-            </p>
-        </div>
-        <div class="box">
-            <h1>Title 3</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, 
-                saepe vitae fugit at laborum in aliquid commodi numquam veniam harum nam quibusdam, 
-                voluptatibus corporis, nesciunt reprehenderit voluptate dicta ipsam sint!
-            </p>
-        </div>           
-    </ul>
+    <div id="box-1" class="box"></div>
+
+    <div class="container">
+        <div id="box-2" class="box"></div>
+        <div id="box-3" class="box"></div>
+    </div>  
+
+    <div id="box-4" class="box"></div>
+    <div id="box-5" class="box"></div>
 
 </body>
 </html>
