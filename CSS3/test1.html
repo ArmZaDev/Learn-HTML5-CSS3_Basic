@@ -7,31 +7,54 @@
     <title>CSS3</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        a{
-            text-decoration: none;
+        li{
+            display: inline;
         }
+        li a{
+            padding-right: 20px;
+        }
+
         a:link{
-            color: red;
-        }
-        a:visited{
-            color: black;
-        }
-        a:hover{
-            text-decoration: underline;
-            background-color: yellow;
-            color: black;
-        }
-        a:active{
-            background-color: blue;
-            color: red;
+            text-decoration: none;
+        }       
+        .box{
+            width: 30%;
+            box-sizing: border-box;
+            display: inline-block;
+            padding: 10px;
+            background-color: antiquewhites;
         }
     </style>
 </head>
 <body>
-    <a href="/home">Home</a>
-    <a href="http://google.com">Google</a>
-    <a href="http://facebook.com">facebook</a>
-    <a href="#">About</a>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Page</a></li>
+        <li><a href="#">Contact</a></li>
+        <hr>
+        <div class="box">
+            <h1>Title 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, 
+                saepe vitae fugit at laborum in aliquid commodi numquam veniam harum nam quibusdam, 
+                voluptatibus corporis, nesciunt reprehenderit voluptate dicta ipsam sint!
+            </p>
+        </div>
+        <div class="box">
+            <h1>Title 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, 
+                saepe vitae fugit at laborum in aliquid commodi numquam veniam harum nam quibusdam, 
+                voluptatibus corporis, nesciunt reprehenderit voluptate dicta ipsam sint!
+            </p>
+        </div>
+        <div class="box">
+            <h1>Title 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, 
+                saepe vitae fugit at laborum in aliquid commodi numquam veniam harum nam quibusdam, 
+                voluptatibus corporis, nesciunt reprehenderit voluptate dicta ipsam sint!
+            </p>
+        </div>           
+    </ul>
 
 </body>
 </html>
