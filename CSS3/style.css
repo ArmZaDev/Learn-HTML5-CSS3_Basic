@@ -1,59 +1,26 @@
-body{
-    background-color: gray;
-    color: white;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: azure;
+    height: 50vh;
+    width: 100vw;
     text-align: center;
-    padding: 100px;
+    padding: 2rem;
+    padding-top: 12rem;
 }
-h1{
-    display: none;
+header h1{
+    font-size: 3rem;
 }
-
-/* Smartphone */
-@media only screen and (max-width:500px){
-    body{
-        background-color: red;
-    }
-    #smartphone h1{
-        display: block;
-    }
+header p{
+    margin: 1rem 0;
 }
-
-/* Tablets */
-@media (min-width:501px) and (max-width:780px) {
-    body{
-        background-color: blue;
-    }
-    #tablets h1{
-        display: block;
-    }
-}
-
-/* laptop destop */
-@media (min-width:769px) and (max-width:1200px){
-    body{
-        background-color: green;
-    }
-    #normal h1{
-        display: block;
-    }
-}
-
-/* widescreen */
-@media (min-width:1201px){
-    body{
-        background-color: black;
-    }
-    #widescreen h1{
-        display: block;
-    }
-}
-
-/* landscape */
-@media (max-height:500px){
-    body{
-        background-color: orange;
-    }
-    #landscape h1{
-        display: block;
-    }
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0.75rem 2rem;
 }
